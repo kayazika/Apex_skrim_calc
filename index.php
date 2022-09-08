@@ -9,19 +9,19 @@
 </head>
 <body>
     <header>
-        <div class="fLogo">
-            <img class="cLogo" src="img/logoApex.png" alt="">
+        <div class="box-logo">
+            <img class="img-logo" src="img/logoApex.png" alt="">
         </div>
-        <div class="fTittle">
-            <h1 class="cTittle">Apex Skrin Calculator</h1>
+        <div class="box-title">
+            <h1 class="text-title">Apex Skrim Calculator</h1>
         </div>
 
-        <nav class="fNav">
-            <ul class="fList">
-                <li class="cList"><a href="/Apex_Skrim">Search</a></li>
-                <li class="cList"><a href="/Apex_Skrim">Popular</a></li>
-                <li class="cList"><a href="/Apex_Skrim">Register</a></li>
-                <li class="cList"><a href="/Apex_Skrim">My Account</a></li>
+        <nav class="box-nav">
+            <ul class="box-list">
+                <li class="item-list"><a href="/Apex_Skrim_calc">Search</a></li>
+                <li class="item-list"><a href="/Apex_Skrim_calc">Popular</a></li>
+                <li class="item-list"><a href="/Apex_Skrim_calc">Register</a></li>
+                <li class="item-list"><a href="/Apex_Skrim_calc">Account</a></li>
 
             </ul>
         </nav>

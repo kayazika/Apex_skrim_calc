@@ -6,32 +6,32 @@
     color: black;
 }
 
-.fLogo{
+.box-logo{
     display: flex;
     justify-content: center;
 }
 
-.cLogo{
+.img-logo{
     width: 150px;
     margin-top: 15px;
 }
 
-.fTittle{
+.box-title{
     display: flex;
     justify-content: center;
     margin-top: 15px;
     
 }
 
-.fList{
+.box-list{
     display: flex;
     justify-content: center;
+  
 }
 
-.cList{
+.item-list{
     list-style: none;
-    margin-left: 15px;
-    margin-top: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
-
 
