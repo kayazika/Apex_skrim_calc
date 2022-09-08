@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.fLogo{
+    display: flex;
+    justify-content: center;
+}
+
+.cLogo{
+    width: 150px;
+    margin-top: 15px;
+}
+
+.fTittle{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+.fList{
+    display: flex;
+    justify-content: center;
+}
+
+.cList{
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
