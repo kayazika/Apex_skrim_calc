@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +25,20 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="box-section">
+            <form action="login.php" class="box-form" >
+                <h1 class="box-item-form" >Login</h1>
+                <label class="box-item-form" for="user">Username</label><br>
+                <input class="box-item-form" name="user" type="text"><br>
+                <label class="box-item-form" for="pass">Password</label><br>
+                <input class="box-item-form" name="pass" type="password"><br>
+                <button type="input">GO</button>
+            </form>
+        </section>
+
+    </main>
     
 </body>
 </html>

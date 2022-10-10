@@ -23,17 +23,37 @@
     
 }
 
-.text-title
+.box-nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;    
+}
 
-.box-list{
+.box-list {
+    display: flex;
+    list-style: none;
+}
+
+.box-list a{
+    padding: 20px;
+
+}
+
+/* account start */
+
+.box-section{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-  
 }
 
-.item-list{
-    list-style: none;
-    padding-left: 15px;
-    padding-top: 15px;
+.box-form{
+    text-align: center;
+    border: 1px black solid;
+    padding: 20px;
 }
+.box-item-form{
+    display: flexbox;
+    /* margin-top: 15px; */
 
+}
