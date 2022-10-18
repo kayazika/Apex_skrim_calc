@@ -1,4 +1,7 @@
- <!DOCTYPE html>
+<?php 
+include('login_verify.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,6 +24,7 @@
                 <li class="item-list"><a href="/Apex_skrim_calc/account.php">Search</a></li>
                 <li class="item-list"><a href="/Apex_skrim_calc/account.php">Popular</a></li>
                 <li class="item-list"><a href="/Apex_skrim_calc/account.php">Account</a></li>
+                <li class="item-list"><a href="/Apex_skrim_calc/logout.php">Logout</a></li>
 
             </ul>
         </nav>

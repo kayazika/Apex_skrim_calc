@@ -1,3 +1,6 @@
+<?php 
+include('login_redirect.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,11 +31,11 @@
 
     <main>
         <section class="box-section">
-            <form action="login.php" class="box-form" >
+            <form method="POST" action="login.php"  class="box-form">
                 <h1 class="box-item-form" >Login</h1>
-                <label class="box-item-form" for="user">Username</label><br>
+                <label class="box-item-form" for="username">Username</label><br>
                 <input class="box-item-form" name="user" type="text"><br>
-                <label class="box-item-form" for="pass">Password</label><br>
+                <label class="box-item-form" for="password">Password</label><br>
                 <input class="box-item-form" name="pass" type="password"><br>
                 <button type="input">GO</button>
             </form>
