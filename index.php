@@ -18,9 +18,9 @@
 
         <nav class="box-nav">
             <ul class="box-list">
-                <li class="item-list"><a href="/search.php">Search</a></li>
-                <li class="item-list"><a href="/popular.php">Popular</a></li>
-                <li class="item-list"><a href="/account.php">Account</a></li>
+                <li class="item-list"><a href="search.php">Search</a></li>
+                <li class="item-list"><a href="popular.php">Popular</a></li>
+                <li class="item-list"><a href="account.php">Account</a></li>
 
             </ul>
         </nav>

@@ -3,7 +3,7 @@ session_start();
 include('connect.php');
  
 if(empty($_POST['user']) || empty($_POST['pass'])) {
-	header('Location: /Apex_skrim_calc/account.php');
+	header('Location: account.php');
 	exit();
 }
  
@@ -22,6 +22,6 @@ if($row == 1) {
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
-	header('Location: /Apex_skrim_calc/index.php');
+	header('Location: index.php');
 	exit();
 }
