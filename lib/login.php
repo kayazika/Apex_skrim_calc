@@ -2,8 +2,12 @@
 session_start();
 include('connect.php');
  
+$hostname = 'http://localhost/Apex_skrim_calc/';
+
+
 if(empty($_POST['user']) || empty($_POST['pass'])) {
-	header('Location: account.php');
+	$target = 'account';
+	header('Location: '.$hostname.$target);
 	exit();
 }
  
@@ -18,10 +22,13 @@ $row = mysqli_num_rows($result);
  
 if($row == 1) {
 	$_SESSION['user'] = $user;
-	header('Location: painel.php');
+	$target = 'painel';
+	header('Location: '.$hostname.$target);
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
-	header('Location: index.php');
+	$target = 'account';
+	header('Location: '.$hostname.$target);
+	//header('Location: http://localhost/Apex_skrim_calc/'.$target);
 	exit();
 }

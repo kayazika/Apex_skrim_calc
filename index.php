@@ -1,57 +1,47 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style_base.css">
+    <link rel="stylesheet" href="./css/style_base.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Skrim Calculator</title>
+    <base href="http://localhost/Apex_skrim_calc/">
+    <title>APEX SCRIM ORG</title>
 </head>
 <body>
     <header>
         <div class="box-logo">
-            <img class="img-logo" src="img/logoApex.png" alt="">
+            <img class="img-logo" src="./img/logoApex.png" alt="">
         </div>
         <div class="box-title">
-            <h1 class="text-title">Apex Skrim Calculator</h1>
+            <h1 class="text-title">Apex Scrim Calculator</h1>
         </div>
-
         <nav class="box-nav">
             <ul class="box-list">
-                <li class="item-list"><a href="search.php">Search</a></li>
-                <li class="item-list"><a href="popular.php">Popular</a></li>
-                <li class="item-list"><a href="account.php">Account</a></li>
-
+                <li><a href="home">Index</a></li>
+                <li><a href="search">search</a></li>
+                <li><a href="popular">popular</a></li>
+                <li><a href="account">account</a></li>   
             </ul>
         </nav>
     </header>
 
     <main>
-        <?php 
-            $dbname = 'liderboard';
-            $con = mysqli_connect('localhost', 'root', '');
-
-            if (!$con) {
-                echo 'Could not connect to mysql';
-                exit;
-            }
-            
-            $result = mysqli_query($con, "SHOW TABLES FROM $dbname");
-            
-            if (!$result) {
-                echo "DB Error, could not list tables\n";
-                echo 'MySQL Error';
-                exit;
-            }
-            
-            while ($row = mysqli_fetch_row($result)) {
-                echo "<td>{$row[0]}</td><br>";
-            }
-            
-            mysqli_free_result($result);
         
-        ?>
+        <?php 
+            $url = (isset($_GET['pagina'])) ? $_GET['pagina'] : 'home';
+            $explode = array_filter(explode('/', $url));
 
+            $pags = 'pags/';
+            $ext = '.php';
+
+            if(file_exists($pags.$explode['0'].$ext)){
+                include($pags.$explode['0'].$ext);
+            }else{
+                echo "pagina não encontrada";
+            }          
+        ?>
+   
     </main>
     
 </body>
