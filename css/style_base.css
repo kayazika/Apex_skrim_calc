@@ -3,7 +3,10 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
+    
+    
+    
 }
 
 .box-logo{
@@ -50,6 +53,7 @@
 .box-form{
     text-align: center;
     border: 1px black solid;
+    border-radius: 5px;
     padding: 20px;
 }
 .box-item-form{
@@ -79,6 +83,8 @@ tr, td {
     
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {background-color: rgba(0, 0, 0, .3);}
 
-tr:hover {background-color: wheat};
+tr:hover {background-color: pink}
+
+

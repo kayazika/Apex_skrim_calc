@@ -32,3 +32,4 @@ if($row == 1) {
 	//header('Location: http://localhost/Apex_skrim_calc/'.$target);
 	exit();
 }
+?>

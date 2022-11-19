@@ -1,7 +1,9 @@
 <?php
-session_start();
-$hostname = 'http://localhost/Apex_skrim_calc/';
+//session_start();
+
 if(!$_SESSION['user']) {
-	header('Location: '.$hostname);
+	header('Location: http://localhost/Apex_skrim_calc/account');
 	exit();
 }
+
+?>
